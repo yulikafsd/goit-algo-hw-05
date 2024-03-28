@@ -42,7 +42,7 @@ def count_logs_by_level(logs: list) -> dict:
 
 def display_log_counts(counts: dict):
     header = 'Рівень логування | Кількість'
-    separator = f'{'-'*17}|{'-'*10}'
+    separator = f'{"-"*17}|{"-"*10}'
     body=''
     for key, value in counts.items():
         body += '{:<17}| {:<10}\n'.format(key.upper(), value)
